@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Featured = () => {
     const images =[
-        "/img/featured.png",
+        "/img/pizza.png",
         "/img/featured2.png",
         "/img/featured2.png",
     ];
