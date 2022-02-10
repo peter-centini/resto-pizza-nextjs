@@ -7,28 +7,25 @@
     flex: 2;
 }
 
-.right{
-    flex: 2;
-}
-
-.imgContainer{
-    width: 100px;
-    height: 100px;
-    position: relative;
-}
 .table{
     width: 100%;
-    border-spacing: 20px;
+    text-align-last: left;
+    margin-bottom: 50px;
 }
-.name{
-    font-weight: 500;
-    color: #d1411e;
-    font-size: 18px;
+
+.row:last-child {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
 }
-.total{
-     font-weight: 500;
-    font-size: 18px;
+
+
+
+.right{
+    flex: 1;
 }
+
 .wrapper{
     width: 90%;
     max-height: 300px;
@@ -40,13 +37,16 @@
     justify-content: space-between;
     color: white;
 }
+
 .totaltextTitle{
     margin-right: 10px;
 }
+
 .button{
+    background-color: white;
     height: 30px;
-    color: #d1411e;
+    color: teal;
     font-weight: bold;
-    cursor: pointer;
     margin-top: 20px;
+    cursor: not-allowed;
 }

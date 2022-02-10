@@ -9,7 +9,7 @@ const Product = () => {
         id: 1,
         img: "/img/pizza.png",
         name: "CAMPAGNARDE",
-        prix: [19.99, 23.99, 27.99],
+        prix: [12.05, 22.50, 27.00],
         desc: "la garniture contient des pommes de terre, fromage rapée, des oignons, des lardons, du camenbert, du fromage de chévre"
     }
     return (
@@ -23,7 +23,7 @@ const Product = () => {
             </div>
             <div className={styles.right}>
                 <h1 className={styles.title}>{pizza.name}</h1>
-                <span className={styles.price}>€{pizza.prix[size]}</span>
+                <span className={styles.price}>{pizza.prix[size]} €</span>
                 <p className={styles.desc}>{pizza.desc}</p>
                 <h3 className={styles.chosse}> Chosse the size</h3>
                 <div className={styles.sizes}>

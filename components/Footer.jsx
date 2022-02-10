@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.motto}>
-            OH OUI, NOUS L'AVONS FAIT. LA PIZZA LAMA, TRANCHE DE PIZZA BIEN CUIT.
+            OH OUI, NOUS L &#8217; AVONS FAIT. LA PIZZA LAMA, TRANCHE DE PIZZA BIEN CUIT.
           </h2>
         </div>
         <div className={styles.card}>
@@ -37,7 +37,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.card}>
-          <h1 className={styles.title}>HORAIRES D'OUVERTURE </h1>
+          <h1 className={styles.title}>HORAIRES D&#8217;OUVERTURE </h1>
           <p className={styles.text}>
             DU LUNDI AU VENDREDI DE
             <br /> 9:00 – 22:00
