@@ -18,5 +18,4 @@ const PizzaList = ({ pizzaList }) => {
     </div>
   );
 };
-
 export default PizzaList;
