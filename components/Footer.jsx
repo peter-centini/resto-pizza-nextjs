@@ -18,24 +18,19 @@ const Footer = () => {
         <div className={styles.card}>
           <h1 className={styles.title}>TROUVER NOS RESTAURANTS</h1>
           <p className={styles.text}>
-            1654 R. Don Road #304.
-            <br /> NewYork, 85022
-            <br /> (602) 867-1010
+            1654 Rue Diego de la Végas.
+            <br /> LasVégas, 85000
+            <br /> (+33) 12.34.56.789
           </p>
           <p className={styles.text}>
-            2356 K. Laquie Rd #235.
-            <br /> NewYork, 85022
-            <br /> (602) 867-1011
+            256 Karl Lagarfeild.
+            <br /> Pari, 75022
+            <br /> (+33) 34.56.78.912
           </p>
           <p className={styles.text}>
-            1614 E. Erwin St #104.
-            <br /> NewYork, 85022
-            <br /> (602) 867-1012
-          </p>
-          <p className={styles.text}>
-            1614 W. Caroll St #125.
-            <br /> NewYork, 85022
-            <br /> (602) 867-1013
+            114 Elon Musk.
+            <br /> NewYork, 92000
+            <br /> (602) 12.34.5§.780
           </p>
         </div>
         <div classame={styles.card}>
