@@ -31,7 +31,7 @@ const cart = () => {
                        <span className={styles.name}>CORALZO</span>
                    </td>
                    <td>
-                       <span className={styles.extras}>Double ingredient, spicy sauce</span>
+                       <span className={styles.extras}>Double ingredient, sauce épicer</span>
                    </td>
                    <td>
                        <span className={styles.price}>19.90€</span>
