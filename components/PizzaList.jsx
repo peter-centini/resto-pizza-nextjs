@@ -4,7 +4,7 @@ import PizzaCard from "./PizzaCard";
 const PizzaList = ({ pizzaList }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Les meilleurs Pizza sont içi</h1>
+      <h1 className={styles.title}>Les meilleurs Pizza sont chez Nous</h1>
       <p className={styles.desc}>
         Toute nos pizza sont cuite au feu de bois dans notre four traditionnelle,elles sont garnies avec des produits frais, cultivée localement
         nos fournisseur se trouve a moins de 50km de notre boutique,
