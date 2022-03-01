@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is made with next js it is a pizza sales site with data base on mongodb where are stored the images the prices the pizza sizes and the descriptions as well as the customer orderif you want to test it do after the clone of the repo
+
+## Getting Install 
+    for install after download
+```bash
+
+npm install
+
+# or
+
+yarn install
+
+# or
+
+yarn
+
+```
 
 ## Getting Install 
     for install after download
@@ -13,20 +29,18 @@ npm install
 First, run the development server:
 
 ```bash
+
 npm run dev
+
 # or
+
 yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
