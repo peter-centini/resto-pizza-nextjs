@@ -2,22 +2,28 @@ import styles from "../../styles/Product.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import axios from "axios";
+import { addProduct } from "../../redux/cartSlice";
+import { useDispatch } from "react-redux";
 
 
 
 const Product = ({ pizza }) => {   
     const [price, setPrice] = useState(pizza.prices[0]);
     const [size, setSize] = useState(0);
-    const [extras, setExtras] = useState([])
+    const [extras, setExtras] = useState([]);
+    const [quantity, setQuantity] = useState(1);
+    const dispatch = useDispatch();
+
 
     const changePrice = (number) => {
     setPrice(price + number);
-  };
+    };
+
     const handleSize =(sizeIndex) =>{
-        const difference = pizza.prices[sizeIndex]- pizza.prices[size];
+        const difference = pizza.prices[sizeIndex] - pizza.prices[size];
         setSize(sizeIndex);
         changePrice(difference);
-    }
+    };
 
     const handleChange = (e, option) => {
     const checked = e.target.checked;
@@ -30,7 +36,11 @@ const Product = ({ pizza }) => {
       setExtras(extras.filter((extra) => extra._id !== option._id));
     }
   };
-
+  //console.log(extras)
+  
+    const handleClick = () => {
+      dispatch(addProduct({...pizza, extras, price, quantity}));
+    };
     
     return (
         <div className={styles.container}>
@@ -45,7 +55,7 @@ const Product = ({ pizza }) => {
                 <h1 className={styles.title}>{pizza.title}</h1>
                 <span className={styles.price}>{price} €</span>
                 <p className={styles.desc}>{pizza.desc}</p>
-                <h3 className={styles.chosse}>Choisir la taille</h3>
+                <h3 className={styles.choose}>Choisir la taille</h3>
                 <div className={styles.sizes}>
                     <div className={styles.size} onClick={() => handleSize(0)}>
                         <Image src="/img/size.png" layout="fill" alt="" />
@@ -60,7 +70,7 @@ const Product = ({ pizza }) => {
                         <span className={styles.number}>Grande</span>
                     </div>
                 </div>
-                <h3 className={styles.chosse}>Choisi les ingrédiens additionnelles</h3>
+                <h3 className={styles.choose}>Choisi les ingrédiens additionnelles</h3>
                 <div className={styles.ingredients}>
                     {pizza.extraOptions.map((option) => (
                     <div className={styles.option} key={option._id}>
@@ -69,7 +79,7 @@ const Product = ({ pizza }) => {
                             id={option.text}
                             name={option.text}
                             className={styles.checkbox}
-                            onChange={(e)=> handleChange(e, option)}
+                            onChange={(e) => handleChange(e, option)}
                              />
                         <label htmlFor="double">{option.text}</label>
                     </div>
@@ -78,9 +88,12 @@ const Product = ({ pizza }) => {
                     
                 </div>
                 <div className={styles.add}>
-                    <input type="number" defaultValue={1}
-                        className={styles.quantity} />
-                    <button className={styles.button}>Add to Cart </button>
+                    <input
+                     onChange={(e) => setQuantity(e.target.value)}
+                     type="number" 
+                     defaultValue={1}
+                     className={styles.quantity} />
+                    <button className={styles.button} onClick={handleClick}> Add to Cart </button>
                 </div>
             </div>
         </div>
