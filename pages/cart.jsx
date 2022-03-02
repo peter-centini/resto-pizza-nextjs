@@ -73,7 +73,7 @@ const cart = () => {
                         Total:
                     </b>{cart.total}€
                 </div>
-                <button className={styles.button}>CHECKOU NOW !</button>
+                <button className={styles.button}>Payer maintenant !</button>
             </div>
         </div>
   </div>
