@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 
 const cart = () => {
-    const dispatch = useDispatch()
-    const cart = useSelector((state)=> state.cart)
+    const dispatch = useDispatch();
+    const cart = useSelector((state)=> state.cart);
 
   return (
   <div className={styles.container}>
