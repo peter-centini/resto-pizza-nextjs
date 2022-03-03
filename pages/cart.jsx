@@ -52,28 +52,28 @@ const cart = () => {
                        <span className={styles.total}>{product.price * product.quantity}€</span>
                    </td>
                </tr>
-                ))};
+                ))}
            </table>
        </div>
         <div className={styles.right}>
             <div className={styles.wrapper}>
-                <h2 className={styles.title}>CART TOTAL</h2>
+                <h2 className={styles.title}>MONTANT TOTAL</h2>
                 <div className={styles.totalText}>
                     <b className={styles.totaltextTitle}>
-                        Subtotal:
+                        SOUS-TOTAL :
                     </b>{cart.total}€
                 </div>
                 <div className={styles.totalText}>
                     <b className={styles.totaltextTitle}>
-                        discount:
+                        RÉDUCTION :
                     </b>00.00€
                 </div>
                 <div className={styles.totalText}>
                     <b className={styles.totaltextTitle}>
-                        Total:
+                        TOTAL :
                     </b>{cart.total}€
                 </div>
-                <button className={styles.button}>CHECKOU NOW !</button>
+                <button className={styles.button}>PAYER MAINTENANT !</button>
             </div>
         </div>
   </div>
