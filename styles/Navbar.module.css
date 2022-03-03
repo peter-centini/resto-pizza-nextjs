@@ -67,6 +67,7 @@ z-index: 999;
     justify-content: center;
     font-weight: bold;
     color: #d1411e;
+    cursor:pointer
 }
 @media screen and (max-width:480px){
     .item:nth-child(2){
