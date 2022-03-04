@@ -19,6 +19,8 @@ const cart = () => {
     const [open, setOpen] = useState(false);
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart);
+    const [cash, setCash] = useState(false);
+
 
     const ButtonWrapper = ({ currency, showSpinner }) => {
         // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
@@ -79,6 +81,7 @@ const cart = () => {
         <div className={styles.container}>
             <div className={styles.left}>
                 <table className={styles.table}>
+                    <tbody>
                     <tr className={styles.tr}>
                         <th>Product</th>
                         <th>Name</th>
@@ -87,6 +90,8 @@ const cart = () => {
                         <th>Quantity</th>
                         <th>Total</th>
                     </tr>
+                    </tbody>
+                    <tbody>
                     {cart.products.map((product) => (
                         <tr className={styles.tr} key={product._id}>
                             <td>
@@ -119,6 +124,7 @@ const cart = () => {
                             </td>
                         </tr>
                     ))}
+                    </tbody>
                 </table>
             </div>
             <div className={styles.right}>
@@ -148,7 +154,7 @@ const cart = () => {
                             </button>
                         <PayPalScriptProvider
                             options={{
-                                "client-id": "test",
+                                "client-id": "AbxnWdEg7W8ELPP-0eMGKQuv47OId6qjwLHHhI6WbxT6kfk58_XE6mMZaMjTopF5CFCjQnaPKy_jskEc",
                                 components: "buttons",
                                 currency: "USD",
                                 // "disable-funding": "credit,cart,p24"
