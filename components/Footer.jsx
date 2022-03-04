@@ -10,8 +10,13 @@ const Footer = () => {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.motto}>
-            OUI, NOUS L&#8217; AVONS FAIT. 
+            VENEZ PASSEZ UNE SOIRÉE DANS UN CADRE IDYLLIQUE.
+            <br></br>
+            <br></br>
+            NOUS L&#8217; AVONS FAIT TOUTE NOS PIZZA SONT CUITE AU FEUX DE BOIS . 
             <br/>
+            <br>
+            </br>
             LA DÉLICE PIZZA, UNE TRANCHE DE PIZZA BIEN CHAUDE.
           </h2>
         </div>
