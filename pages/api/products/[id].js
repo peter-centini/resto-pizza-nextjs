@@ -10,7 +10,7 @@ export default async function handler(req, res) {
         } = req;
 
     dbConnect();
-
+      // methode get sur mongose pour recuperer les desc,title,price des produits
     if (method === "GET") {
         try {
       const product = await Product.findById(id)
@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     }
         
     }
-
+    // methode PUT pour la mise a jour des produits et des tarifs
     if (method === "PUT") {
         
        try {
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
       res.status(500).json(err);
     }
     }
-
+    //methode delete pour la suppression  des produits et des tarifs ect
     if (method === "DELETE") {
         
         try {

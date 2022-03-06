@@ -7,24 +7,37 @@ import {
     PayPalButtons,
     usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
+import axios from "axios";
+import {useRouter} from "next/router";
+import { reset } from "../redux/cartSlice";
 
 
 
 
 const cart = () => {
-    //this value are the props in the ui
-    const amount = "2";
+    //cette valeur sont les accessible dans l'interface utilisateur
+    const cart = useSelector((state) => state.cart);
+    const [open, setOpen] = useState(false);
+    const amount = cart.total;
     const currency = "USD";
     const style = { layout: "vertical" };
-    const [open, setOpen] = useState(false);
     const dispatch = useDispatch();
-    const cart = useSelector((state) => state.cart);
     const [cash, setCash] = useState(false);
+    const router = useRouter();
 
+    const createOrder = async (data) =>{
+        try {
+            const re = axios.post("http://localhost/3000/api/orders", data)
+            res.status === 201 && Router.push("/orders/" + res.data_id)
+            dispatch(reset)
+    }catch(err){
+    console.log(err)
+    }
+    }
 
     const ButtonWrapper = ({ currency, showSpinner }) => {
-        // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
-        // This is the main reason to wrap the PayPalButtons in a new component
+        //usePayPalScriptReducer ne peut être utilisé qu'à l'intérieur des enfants de PayPalScriptProviders       
+        // C'est la principale raison d'envelopper les PayPalButtons dans un nouveau composant
         const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
         useEffect(() => {
@@ -57,7 +70,7 @@ const cart = () => {
                                 ],
                             })
                             .then((orderId) => {
-                                // Your code here after create the order
+                                // Votre code ici après avoir créé la commande
                                 return orderId;
                             });
                     }}
