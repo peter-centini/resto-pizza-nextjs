@@ -16,13 +16,18 @@ import { reset } from "../redux/cartSlice";
 
 const cart = () => {
     //cette valeur sont les accessible dans l'interface utilisateur
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const cart = useSelector((state) => state.cart);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [open, setOpen] = useState(false);
     const amount = cart.total;
     const currency = "USD";
     const style = { layout: "vertical" };
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const dispatch = useDispatch();
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [cash, setCash] = useState(false);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter();
 
     const createOrder = async (data) =>{
@@ -48,6 +53,7 @@ const cart = () => {
                     currency: currency,
                 },
             });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [currency, showSpinner]);
         return (
             <>
