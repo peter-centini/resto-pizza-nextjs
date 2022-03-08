@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import {useRouter} from "next/router";
 import { reset } from "../redux/cartSlice";
-
+//import OrderDetail from "../components/OrderDetail";
 
 
 
@@ -30,20 +30,23 @@ const cart = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter();
 
-    const createOrder = async (data) =>{
-        try {
-            const re = axios.post("http://localhost/3000/api/orders", data)
-            res.status === 201 && Router.push("/orders/" + res.data_id)
-            dispatch(reset)
-    }catch(err){
-    console.log(err)
+    const createOrder = async (data) => {
+    try {
+      const res = await axios.post("http://localhost:3000/api/orders", data);
+      if (res.status === 201) {
+        dispatch(reset());
+        router.push(`/orders/${res.data._id}`);
+      }
+    } catch (err) {
+      console.log(err);
     }
-    }
+  };
+
 
     const ButtonWrapper = ({ currency, showSpinner }) => {
         //usePayPalScriptReducer ne peut être utilisé qu'à l'intérieur des enfants de PayPalScriptProviders       
         // C'est la principale raison d'envelopper les PayPalButtons dans un nouveau composant
-        const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
+         const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
         useEffect(() => {
             dispatch({
@@ -173,10 +176,10 @@ const cart = () => {
                             </button>
                         <PayPalScriptProvider
                             options={{
-                                "client-id": "AbxnWdEg7W8ELPP-0eMGKQuv47OId6qjwLHHhI6WbxT6kfk58_XE6mMZaMjTopF5CFCjQnaPKy_jskEc",
+                                "client-id": "AWcuRS92G2sjN3pQNNxUJdrFhiOPS7G1CUgBMK5Qp95COCXnlp7nRLa8hOzSZPwwnc7uQfyxxLV-dlVB",
                                 components: "buttons",
                                 currency: "USD",
-                                // "disable-funding": "credit,cart,p24"
+                                "disable-funding": "credit,card,p24"
                             }} >
                             <ButtonWrapper currency={currency} showSpinner={false} />
                         </PayPalScriptProvider>
@@ -184,10 +187,9 @@ const cart = () => {
                     ) : (
                         <button onClick={() => setOpen(true)} className={styles.button}>PAYER MAINTENANT !</button>
                     )}
-
-
                 </div>
             </div>
+            {/* {cash && <OrderDetail total={cart.total} createOrder={createOrder} />} */}
         </div>
 
     )

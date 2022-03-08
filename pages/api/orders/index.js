@@ -5,7 +5,7 @@ const handler = async (req, res) => {
   const { method } = req;
 
   await dbConnect();
-        // methode get  pour recuperer les commandes clients
+       // methode get  pour recuperer les commandes clients
   if (method === "GET") {
     try {
       const orders = await Order.find();
@@ -14,7 +14,8 @@ const handler = async (req, res) => {
       res.status(500).json(err);
     }
   }
-   // methode POST  pour mettre a jour  les commandes clients
+       // methode POST  pour mettre a jour  les commandes clients
+
   if (method === "POST") {
     try {
       const order = await Order.create(req.body);
