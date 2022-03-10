@@ -37,7 +37,7 @@ export default async function handler(req, res) {
         
         try {
       await Product.findByIdAndDelete(id);
-      res.status(200).json("The product has been deleted!");
+      res.status(200).json("Le produit a bien été détruit !");
     } catch (err) {
       res.status(500).json(err);
     }

@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import {useRouter} from "next/router";
 import { reset } from "../redux/cartSlice";
-//import OrderDetail from "../components/OrderDetail";
+import OrderDetail from "../components/OrderDetail";
 
 
 
@@ -189,7 +189,7 @@ const cart = () => {
                     )}
                 </div>
             </div>
-            {/* {cash && <OrderDetail total={cart.total} createOrder={createOrder} />} */}
+            {cash && <OrderDetail total={cart.total} createOrder={createOrder} />}
         </div>
 
     )
