@@ -13,8 +13,8 @@ const Footer = () => {
             VENEZ PASSEZ UNE SOIRÉE DANS UN CADRE IDYLLIQUE.
             <br></br>
             <br></br>
-            NOUS L&#8217; AVONS FAIT TOUTE NOS PIZZA SONT CUITE AU FEUX DE BOIS . 
-            <br/>
+            NOUS L&#8217; AVONS FAIT TOUTE NOS PIZZA SONT CUITE AU FEUX DE BOIS .
+            <br />
             <br>
             </br>
             LA DÉLICE PIZZA, UNE TRANCHE DE PIZZA BIEN CHAUDE.
@@ -45,7 +45,7 @@ const Footer = () => {
             <br /> 9:00 – 22:00
           </p>
           <p className={styles.text}>
-             SAMEDI - DIMANCHE
+            SAMEDI - DIMANCHE
             <br /> 12:00 – 24:00
           </p>
         </div>

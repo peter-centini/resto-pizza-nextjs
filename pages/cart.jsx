@@ -8,7 +8,7 @@ import {
     usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 import axios from "axios";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 import { reset } from "../redux/cartSlice";
 import OrderDetail from "../components/OrderDetail";
 
@@ -31,22 +31,22 @@ const cart = () => {
     const router = useRouter();
 
     const createOrder = async (data) => {
-    try {
-      const res = await axios.post("http://localhost:3000/api/orders", data);
-      if (res.status === 201) {
-        dispatch(reset());
-        router.push(`/orders/${res.data._id}`);
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
+        try {
+            const res = await axios.post("http://localhost:3000/api/orders", data);
+            if (res.status === 201) {
+                dispatch(reset());
+                router.push(`/orders/${res.data._id}`);
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
 
     const ButtonWrapper = ({ currency, showSpinner }) => {
         //usePayPalScriptReducer ne peut être utilisé qu'à l'intérieur des enfants de PayPalScriptProviders       
         // C'est la principale raison d'envelopper les PayPalButtons dans un nouveau composant
-         const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
+        const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
 
         useEffect(() => {
             dispatch({
@@ -56,7 +56,7 @@ const cart = () => {
                     currency: currency,
                 },
             });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+            // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [currency, showSpinner]);
         return (
             <>
@@ -104,48 +104,48 @@ const cart = () => {
             <div className={styles.left}>
                 <table className={styles.table}>
                     <tbody>
-                    <tr className={styles.tr}>
-                        <th>Product</th>
-                        <th>Name</th>
-                        <th>Extras</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                    </tr>
+                        <tr className={styles.tr}>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Extras</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
                     </tbody>
                     <tbody>
-                    {cart.products.map((product) => (
-                        <tr className={styles.tr} key={product._id}>
-                            <td>
-                                <div className={styles.imgContainer}>
-                                    <Image src={product.img}
-                                        layout="fill"
-                                        objectfit="cover"
-                                        alt=""
-                                    />
-                                </div>
-                            </td>
-                            <td>
-                                <span className={styles.name}>{product.title}</span>
-                            </td>
-                            <td>
-                                <span className={styles.extras}>
-                                    {product.extras.map(extra => (
-                                        <span key={extra._id}>{extra.text}, </span>
-                                    ))}
-                                </span>
-                            </td>
-                            <td>
-                                <span className={styles.price}>{product.price}€</span>
-                            </td>
-                            <td>
-                                <span className={styles.quantity}>{product.quantity}</span>
-                            </td>
-                            <td>
-                                <span className={styles.total}>{product.price * product.quantity}€</span>
-                            </td>
-                        </tr>
-                    ))}
+                        {cart.products.map((product) => (
+                            <tr className={styles.tr} key={product._id}>
+                                <td>
+                                    <div className={styles.imgContainer}>
+                                        <Image src={product.img}
+                                            layout="fill"
+                                            objectfit="cover"
+                                            alt=""
+                                        />
+                                    </div>
+                                </td>
+                                <td>
+                                    <span className={styles.name}>{product.title}</span>
+                                </td>
+                                <td>
+                                    <span className={styles.extras}>
+                                        {product.extras.map(extra => (
+                                            <span key={extra._id}>{extra.text}, </span>
+                                        ))}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span className={styles.price}>{product.price}€</span>
+                                </td>
+                                <td>
+                                    <span className={styles.quantity}>{product.quantity}</span>
+                                </td>
+                                <td>
+                                    <span className={styles.total}>{product.price * product.quantity}€</span>
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </div>
@@ -169,20 +169,20 @@ const cart = () => {
                     </div>
                     {open ? (
                         <div className={styles.paymentMethods}>
-                            <button 
-                            className={styles.payButton}
-                            onClick={()=>setCash(true)}>
-                            paiement à la livraison
+                            <button
+                                className={styles.payButton}
+                                onClick={() => setCash(true)}>
+                                paiement à la livraison
                             </button>
-                        <PayPalScriptProvider
-                            options={{
-                                "client-id": "AWcuRS92G2sjN3pQNNxUJdrFhiOPS7G1CUgBMK5Qp95COCXnlp7nRLa8hOzSZPwwnc7uQfyxxLV-dlVB",
-                                components: "buttons",
-                                currency: "USD",
-                                "disable-funding": "credit,card,p24"
-                            }} >
-                            <ButtonWrapper currency={currency} showSpinner={false} />
-                        </PayPalScriptProvider>
+                            <PayPalScriptProvider
+                                options={{
+                                    "client-id": "AWcuRS92G2sjN3pQNNxUJdrFhiOPS7G1CUgBMK5Qp95COCXnlp7nRLa8hOzSZPwwnc7uQfyxxLV-dlVB",
+                                    components: "buttons",
+                                    currency: "USD",
+                                    "disable-funding": "credit,card,p24"
+                                }} >
+                                <ButtonWrapper currency={currency} showSpinner={false} />
+                            </PayPalScriptProvider>
                         </div>
                     ) : (
                         <button onClick={() => setOpen(true)} className={styles.button}>PAYER MAINTENANT !</button>
