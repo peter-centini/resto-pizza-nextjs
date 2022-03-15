@@ -4,8 +4,8 @@ import Product from "../../../models/Product"
 
 
 export default async function handler(req, res) {
-  const { method } = req;
-
+  const { method, cookies } = req;
+    const token = cookies.token
   dbConnect();
 
   if (method === "GET") {
@@ -18,6 +18,9 @@ export default async function handler(req, res) {
   }
 
   if (method === "POST") {
+    if(!token || token !== process.env.token) {
+      return res.status(401).json("Not authentification !");
+    }
     try {
       const product = await Product.create(req.body);
       res.status(201).json(product);

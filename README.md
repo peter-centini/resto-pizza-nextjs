@@ -1,4 +1,3 @@
-This project is made with next js it is a pizza sales site with data base on mongodb where are stored the images the prices the pizza sizes and the descriptions as well as the customer orderif you want to test it do after the clone of the repo
 
 ## Getting Install 
     for install after download

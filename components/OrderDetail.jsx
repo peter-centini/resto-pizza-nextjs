@@ -5,14 +5,23 @@ const OrderDetail = ({ total, createOrder }) => {
     const [customer, setCustomer] = useState("");
     const [address, setAddress] = useState("");
 
+
     const handleClick = () => {
         createOrder({ customer, address, total, method: 0 });
     };
 
+    // function closed() {
+    //     const [isOpen, setOpen] = useState();
+    //     setopen(true)
+    // }
+
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <h1 className={styles.title}>Vous paierez 12€ aprés la livraison.</h1>
+                {/* <span onClick={(closed) => (setOpen(false))} className={styles.close}>
+          X
+        </span> */}
+                <h1 className={styles.title}>Vous paierez {total} € aprés la livraison.</h1>
                 <div className={styles.item}>
                     <label className={styles.label}>Nom Prénom</label>
                     <input

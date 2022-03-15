@@ -13,10 +13,10 @@
   text-align: left;
 }
 
-.button{
+.button {
   border: none;
   color: white;
-  padding: 15px;
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -27,4 +27,8 @@
 
 .button:last-child {
   background-color: crimson;
+}
+.next{
+  background-color: tomato;
+  color: white;
 }
