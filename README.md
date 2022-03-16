@@ -4,7 +4,7 @@ Un projet fait en suivant Lama sur youtube sur lequel on utilise mongodb, paypal
 
 c'est un site de pizza avec la gestion des commandes et des produits dans la db 
 
-je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec 
+je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec.
 
 ## Dependencies Used
 
@@ -22,9 +22,9 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
 ```
 
 ## Getting Install 
-install apres téléchargement ou clone du github
+install apres téléchargement ou clone du github.
 
-for install after download  
+for install after download. 
 
 ```
 npm install
@@ -40,9 +40,9 @@ yarn
 ```
 
 ## Getting Started
-Premier lancement du projet:
+Premier lancement du projet.
 
-First, run the development server:
+First, run the development server.
 
 ```
 npm run dev
@@ -61,7 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Admin Dashboard
 
 ouvrir dans votre navigateur [http://localhost:3000/admin](http://localhost:3000/admin)
-pour acceder a la page d'administration des commandes clients
+pour acceder a la page d'administration des commandes clients et creations des produits.
 
 
 to access the customer orders administration page [http://localhost:3000/admin](http://localhost:3000/admin)
