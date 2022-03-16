@@ -1,4 +1,4 @@
-## Project description
+# Project description
 
 Un projet fait en suivant Lama sur youtube sur lequel on utilise mongodb, paypal, redux, myCookies, ect...
 
@@ -7,6 +7,7 @@ c'est un site de pizza avec la gestion des commandes et des produits dans la db
 je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec 
 
 ## Dependencies Used
+
 ```
     paypal/react-paypal-js : ^7.6.0,
     @reduxjs/toolkit : ^1.8.0
@@ -21,9 +22,9 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
 ```
 
 ## Getting Install 
+
     install apres téléchargement ou clone du github
-    for install after download 
-    
+    for install after download     
 ```
 npm install
 
