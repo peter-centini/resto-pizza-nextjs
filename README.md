@@ -56,6 +56,8 @@ yarn dev
 ```
 ## visualization of the project
 
+Ouvrir votre navigateur sur l'adresse[http://localhost:3000]
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Access Admin
@@ -80,4 +82,3 @@ default password: admin/admin
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
 </p>
-```bash
