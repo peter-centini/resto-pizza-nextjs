@@ -4,7 +4,7 @@ c'est un site de pizza avec la gestion des commandes et des produits dans la db
 
 je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec 
 
-## Dependances Utilisées
+## Dependencies Used
 ```
     paypal/react-paypal-js : ^7.6.0,
     @reduxjs/toolkit : ^1.8.0
