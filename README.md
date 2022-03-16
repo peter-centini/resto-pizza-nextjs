@@ -18,7 +18,7 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
     react-dom : 17.0.2
     react-redux : ^7.2.6
     redux: ^4.1.2
-```
+```bash
 
 ## Getting Install 
 
