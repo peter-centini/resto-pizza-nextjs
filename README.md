@@ -76,8 +76,7 @@ default password: admin/admin
 
 
 ## screen 
-```
+
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
 </p>
-```
