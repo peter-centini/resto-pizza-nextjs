@@ -4,7 +4,7 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
 
 ## Dependances Utilisées
 ```
-paypal/react-paypal-js : ^7.6.0,
+    paypal/react-paypal-js : ^7.6.0,
     @reduxjs/toolkit : ^1.8.0
     axios : ^0.25.0
     cookie : ^0.4.2
@@ -17,8 +17,10 @@ paypal/react-paypal-js : ^7.6.0,
 ```
 
 ## Getting Install 
-    for install after download 
+
     install apres téléchargement ou clone du github
+    for install after download 
+    
 ```bash
 
 npm install
