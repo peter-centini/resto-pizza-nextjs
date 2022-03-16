@@ -1,11 +1,11 @@
 ## Project description
-```
+
 Un projet fait en suivant Lama sur youtube sur lequel on utilise mongodb, paypal, redux, myCookies, ect...
 
 c'est un site de pizza avec la gestion des commandes et des produits dans la db 
 
 je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec 
-```
+
 ## Dependencies Used
 ```
     paypal/react-paypal-js : ^7.6.0,
@@ -55,24 +55,24 @@ yarn dev
 
 ```
 ## visualization of the project
-```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-```
+
 ## Access Admin
-```
+
 ouvrir dans votre navigateur [http://localhost:3000/admin](http://localhost:3000/admin)
 pour acceder a la page d'administration des commandes clients
 
 
 to access the customer orders administration page [http://localhost:3000/admin](http://localhost:3000/admin)
 default password: admin/admin
-```
+
 ## Admin Dashboard
 ```
     Username: admin
     password: admin
     modifiable dans le .env
-```
+```bash
 
 
 ## screen 
