@@ -38,8 +38,9 @@ yarn
 ```
 
 ## Getting Started
-Premier lancement du projet:
-First, run the development server:
+
+    Premier lancement du projet:
+    First, run the development server:
 
 
 ```bash
