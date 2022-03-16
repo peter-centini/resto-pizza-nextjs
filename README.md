@@ -72,7 +72,7 @@ default password: admin/admin
     Username: admin
     password: admin
     modifiable dans le .env
-```bash
+```
 
 
 ## screen 
@@ -80,3 +80,4 @@ default password: admin/admin
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
 </p>
+```bash
