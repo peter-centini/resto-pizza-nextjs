@@ -36,9 +36,9 @@ yarn
 ```
 
 ## Getting Started
-
-First, run the development server:
 Premier lancement du projet:
+First, run the development server:
+
 
 ```bash
 
@@ -52,7 +52,12 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+ouvrir dans votre navigateur [http://localhost:3000/admin](http://localhost:3000/admin)
+pour acceder a la page d'administration des commandes clients
+password par defaut : admin/admin
 
+to access the customer orders administration page [http://localhost:3000/admin](http://localhost:3000/admin)
+default password: admin/admin
 
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
