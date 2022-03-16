@@ -23,8 +23,9 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
 
 ## Getting Install 
 
-    install apres téléchargement ou clone du github
-    for install after download     
+install apres téléchargement ou clone du github
+for install after download  
+
 ```
 npm install
 
@@ -40,8 +41,8 @@ yarn
 
 ## Getting Started
 
-    Premier lancement du projet:
-    First, run the development server:
+Premier lancement du projet:
+First, run the development server:
 
 ```
 npm run dev
