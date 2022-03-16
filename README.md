@@ -1,3 +1,4 @@
+## Project description
 Un projet fait en suivant Lama sur youtube sur lequel on utilise mongodb, paypal, redux, myCookies, ect...
 
 c'est un site de pizza avec la gestion des commandes et des produits dans la db 
