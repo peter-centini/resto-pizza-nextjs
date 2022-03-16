@@ -51,7 +51,7 @@ npm run dev
 yarn dev
 
 ```
-## visualization of the project
+## Visualization of the project
 
 Ouvrir votre navigateur sur l'adresse[http://localhost:3000](http://localhost:3000)
 
@@ -74,7 +74,7 @@ default password: admin/admin
 ```
 
 
-## screen 
+### Screen 
 
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
