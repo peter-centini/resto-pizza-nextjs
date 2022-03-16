@@ -56,7 +56,7 @@ yarn dev
 ```
 ## visualization of the project
 
-Ouvrir votre navigateur sur l'adresse[http://localhost:3000]
+Ouvrir votre navigateur sur l'adresse[http://localhost:3000](http://localhost:3000)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
