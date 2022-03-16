@@ -26,7 +26,6 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
     for install after download 
     
 ```
-
 npm install
 
 # or
@@ -44,9 +43,7 @@ yarn
     Premier lancement du projet:
     First, run the development server:
 
-
 ```
-
 npm run dev
 
 # or
