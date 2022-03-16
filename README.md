@@ -43,7 +43,7 @@ yarn
     Premier lancement du projet:
     First, run the development server:
 
-```bash
+```
 npm run dev
 
 # or
@@ -57,7 +57,7 @@ Ouvrir votre navigateur sur l'adresse[http://localhost:3000](http://localhost:30
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Access Admin
+## Admin Dashboard
 
 ouvrir dans votre navigateur [http://localhost:3000/admin](http://localhost:3000/admin)
 pour acceder a la page d'administration des commandes clients
@@ -66,7 +66,7 @@ pour acceder a la page d'administration des commandes clients
 to access the customer orders administration page [http://localhost:3000/admin](http://localhost:3000/admin)
 default password: admin/admin
 
-## Admin Dashboard
+## Access Admin
 ```
     Username: admin
     password: admin
