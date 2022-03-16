@@ -24,7 +24,7 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
     install apres téléchargement ou clone du github
     for install after download 
     
-```bash
+```
 npm install
 
 # or
@@ -38,10 +38,11 @@ yarn
 ```
 
 ## Getting Started
+
     Premier lancement du projet:
     First, run the development server:
 
-```bash
+```
 npm run dev
 
 # or
@@ -72,7 +73,7 @@ default password: admin/admin
 ```
 
 
-### Screen 
+## Screen 
 
 <p align="center">
 <img src="https://github.com/peter-centini/resto-pizza-nextjs/blob/dev/site%20pizza.jpeg" width="350" title="project img">
