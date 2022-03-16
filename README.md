@@ -25,7 +25,7 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
     install apres téléchargement ou clone du github
     for install after download 
     
-```bash
+```
 
 npm install
 
@@ -45,7 +45,7 @@ yarn
     First, run the development server:
 
 
-```bash
+```
 
 npm run dev
 
