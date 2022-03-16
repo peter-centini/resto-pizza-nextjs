@@ -23,8 +23,9 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
 ## Getting Install 
     install apres téléchargement ou clone du github
     for install after download 
-    
-```bash
+```
+```
+```
 npm install
 
 # or
