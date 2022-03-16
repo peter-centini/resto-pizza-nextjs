@@ -18,14 +18,14 @@ je vous le partage profitez en pour le modifier, le refaire, ou vous amuser avec
     react-dom : 17.0.2
     react-redux : ^7.2.6
     redux: ^4.1.2
-```bash
+```
 
 ## Getting Install 
 
     install apres téléchargement ou clone du github
     for install after download 
     
-```
+```bash
 npm install
 
 # or
@@ -42,8 +42,8 @@ yarn
 
     Premier lancement du projet:
     First, run the development server:
-##
-```
+
+```bash
 npm run dev
 
 # or
